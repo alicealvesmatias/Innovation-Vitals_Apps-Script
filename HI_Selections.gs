@@ -35,7 +35,7 @@ function headerMap_(row) {
   return m;
 }
 
-// === MENSAGEM HTML BONITA ===
+// === MENSAGEM HTML ===
 function htmlMessage_(msg, emoji = '✅') {
   return HtmlService.createHtmlOutput(`
     <html>
@@ -191,7 +191,7 @@ function exportFull_(project) {
     rowById.get(id).push(row);
   }
 
-  // Função de escape CSV (UTF-8 friendly)
+  // Função de escape CSV 
   const escapeCSV = (text) => {
     if (text == null) return '';
     const s = String(text).replace(/"/g, '""');
