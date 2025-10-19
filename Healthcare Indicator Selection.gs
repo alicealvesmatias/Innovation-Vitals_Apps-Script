@@ -170,7 +170,7 @@ function exportFull_(project) {
     return HtmlService.createHtmlOutput(`
       <html><body style="font-family:system-ui;text-align:center;padding:50px;">
         <h2>📭 No indicators found for project <b>${project}</b>.</h2>
-        <p>You can now return to the report and start selecting indicators.</p>
+        <p>You can now return to the Innovation Vitals tool and start selecting indicators.</p>
       </body></html>`);
   }
 
